@@ -1,0 +1,111 @@
+import { CheckCircle2 } from "lucide-react";
+
+export default function Visas() {
+  const visaTypes = [
+    { name: "Employment Visa", icon: "💼" },
+    { name: "Family Visa", icon: "👨‍👩‍👧‍👦" },
+    { name: "Golden Visa", icon: "✨" },
+    { name: "Visit Visa", icon: "🛫" },
+  ];
+
+  const processSteps = [
+    {
+      step: "01",
+      title: "Entry Permit",
+      description: "Secure your initial approval to enter the UAE legally.",
+    },
+    {
+      step: "02",
+      title: "Medical Test",
+      description: "Complete health screening at government centers.",
+    },
+    {
+      step: "03",
+      title: "Emirates ID",
+      description: "Register biometrics for your official identity card.",
+    },
+    {
+      step: "04",
+      title: "Visa Stamping",
+      description: "Final residency endorsement on your passport.",
+    },
+  ];
+
+  const ecosystem = ["Tasheel", "Amer", "Tawjeeh", "ICP", "MOHRE", "DED"];
+
+  return (
+    <section id="visas" className="py-20 bg-gradient-to-b from-slate-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <span className="text-blue-600 font-semibold text-sm tracking-widest uppercase">
+            Residency Solutions
+          </span>
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6">
+            Seamless Visa Assistance
+          </h2>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            We handle the end-to-end process of UAE residency, ensuring a smooth transition for you and your family.
+          </p>
+        </div>
+
+        {/* Visa Types */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+          {visaTypes.map((visa) => (
+            <div
+              key={visa.name}
+              className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-all hover:-translate-y-1"
+            >
+              <div className="text-4xl mb-3">{visa.icon}</div>
+              <p className="font-semibold text-slate-900">{visa.name}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Process Journey */}
+        <div className="mb-20">
+          <h3 className="text-3xl font-bold text-slate-900 mb-12 text-center">
+            The Process Journey
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {processSteps.map((item, index) => (
+              <div key={item.step} className="relative">
+                {/* Connector Line */}
+                {index < processSteps.length - 1 && (
+                  <div className="hidden md:block absolute top-20 left-1/2 w-full h-0.5 bg-gradient-to-r from-blue-400 to-transparent" />
+                )}
+
+                {/* Card */}
+                <div className="bg-white rounded-xl p-6 shadow-md relative z-10">
+                  <div className="text-4xl font-bold text-blue-600 mb-3">{item.step}</div>
+                  <h4 className="text-xl font-bold text-slate-900 mb-2">{item.title}</h4>
+                  <p className="text-slate-600">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Ecosystem */}
+        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-12">
+          <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">
+            Our Ecosystem
+          </h3>
+          <p className="text-center text-slate-600 mb-8">
+            Direct integration with the UAE's primary service centers.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
+            {ecosystem.map((service) => (
+              <div
+                key={service}
+                className="bg-white rounded-lg p-4 text-center font-semibold text-slate-700 shadow-sm hover:shadow-md transition-shadow"
+              >
+                {service}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -25,6 +25,7 @@ import VATCorporateTaxDubai from "@/pages/VATCorporateTaxDubai";
 import ContactPage from "@/pages/ContactPage";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MobileStickyCTA from "@/components/MobileStickyCTA";
+import ScrollToTop from "@/components/ScrollToTop";
 import NotFoundPage from "@/pages/NotFoundPage";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
+          <ScrollToTop />
           <Toaster />
           <div className="min-h-screen bg-slate-50 pb-20 lg:pb-0">
             <Navigation />

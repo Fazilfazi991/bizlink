@@ -2,6 +2,7 @@ import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import { Button } from "@/components/ui/button";
 import { Target, Eye, CheckCircle2, MessageSquare, FileCheck, ShieldCheck, HeartHandshake } from "lucide-react";
+import ReusableCTA from "@/components/ReusableCTA";
 
 export default function AboutPage() {
   const steps = [

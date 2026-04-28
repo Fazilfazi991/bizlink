@@ -2,6 +2,7 @@ import PageHero from "@/components/PageHero";
 import SEO from "@/components/SEO";
 import FAQAccordion from "@/components/FAQAccordion";
 import ReusableCTA from "@/components/ReusableCTA";
+import TrustSection from "@/components/TrustSection";
 import { CheckCircle2, FileSearch, Scale, Building2 } from "lucide-react";
 
 export default function DocumentClearingDubai() {
@@ -101,6 +102,7 @@ export default function DocumentClearingDubai() {
         </div>
       </section>
 
+      <TrustSection />
       <FAQAccordion items={faqs} />
       <ReusableCTA 
         whatsappMessage="Hi Bizlink, I need help with document clearing services in Dubai."

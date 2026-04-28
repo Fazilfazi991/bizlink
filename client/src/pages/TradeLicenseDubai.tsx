@@ -2,6 +2,7 @@ import PageHero from "@/components/PageHero";
 import SEO from "@/components/SEO";
 import FAQAccordion from "@/components/FAQAccordion";
 import ReusableCTA from "@/components/ReusableCTA";
+import TrustSection from "@/components/TrustSection";
 import { CheckCircle2, ShieldCheck, Clock, FileText } from "lucide-react";
 
 export default function TradeLicenseDubai() {
@@ -105,6 +106,7 @@ export default function TradeLicenseDubai() {
         </div>
       </section>
 
+      <TrustSection />
       <FAQAccordion items={faqs} />
       <ReusableCTA 
         whatsappMessage="Hi Bizlink, I need help with trade license services in Dubai."

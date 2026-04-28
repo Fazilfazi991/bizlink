@@ -2,6 +2,7 @@ import PageHero from "@/components/PageHero";
 import SEO from "@/components/SEO";
 import FAQAccordion from "@/components/FAQAccordion";
 import ReusableCTA from "@/components/ReusableCTA";
+import TrustSection from "@/components/TrustSection";
 import { Building2, Globe, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 
@@ -82,6 +83,7 @@ export default function BusinessSetupDubai() {
         </div>
       </section>
 
+      <TrustSection />
       <FAQAccordion items={setupFAQs} />
       <ReusableCTA />
     </>

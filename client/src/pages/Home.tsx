@@ -3,6 +3,7 @@ import About from "./sections/About";
 import Services from "./sections/Services";
 import Government from "./sections/Government";
 import Visas from "./sections/Visas";
+import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import SEO from "@/components/SEO";
 import FAQAccordion from "@/components/FAQAccordion";

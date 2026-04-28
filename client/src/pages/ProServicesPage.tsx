@@ -2,6 +2,7 @@ import PageHero from "@/components/PageHero";
 import SEO from "@/components/SEO";
 import FAQAccordion from "@/components/FAQAccordion";
 import ReusableCTA from "@/components/ReusableCTA";
+import TrustSection from "@/components/TrustSection";
 import { CheckCircle2, ShieldCheck, Zap, HeartHandshake } from "lucide-react";
 
 export default function ProServicesPage() {
@@ -69,6 +70,7 @@ export default function ProServicesPage() {
         </div>
       </section>
 
+      <TrustSection />
       <FAQAccordion items={proFAQs} />
       <ReusableCTA 
         whatsappMessage="Hi Bizlink, I need help with PRO services in Dubai."

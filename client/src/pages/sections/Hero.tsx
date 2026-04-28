@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Zap, Shield, Users } from "lucide-react";
+import { Zap, Shield, Users, ArrowRight, Calculator } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Hero() {
   return (
@@ -27,7 +28,7 @@ export default function Hero() {
               <span className="inline-block text-blue-400 font-semibold text-sm tracking-widest">
                 #1 PRO SERVICES IN DUBAI
               </span>
-              <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-black text-white leading-[1.1]">
                 Accelerate Your Business{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
                   Expansion in Dubai
@@ -40,46 +41,25 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="/contact">
-                <Button className="px-8 py-6 bg-blue-600 text-white hover:bg-blue-700 rounded-full font-semibold flex items-center gap-2 text-base">
+              <Link href="/contact" className="w-full sm:w-auto">
+                <Button className="w-full px-10 h-16 bg-blue-600 text-white hover:bg-blue-700 rounded-2xl font-bold flex items-center justify-center gap-3 text-lg shadow-2xl shadow-blue-500/20 group">
                   Start Your Business
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z" />
-                  </svg>
+                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </a>
-              <a 
-                href="https://wa.me/971547486000?text=Hi%20Bizlink%2C%20I%20would%20like%20to%20get%20a%20cost%20estimate%20for%20my%20business%20setup%20in%20Dubai." 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <button className="px-8 py-6 bg-white/10 border border-white/20 text-white hover:bg-white/20 rounded-full font-semibold flex items-center gap-2 text-base transition-colors w-full sm:w-auto">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path d="M176,64v48H80V64Z" opacity="0.2" />
-                    <path d="M80,120h96a8,8,0,0,0,8-8V64a8,8,0,0,0-8-8H80a8,8,0,0,0-8,8v48A8,8,0,0,0,80,120Zm8-48h80v32H88ZM200,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V40A16,16,0,0,0,200,24Zm0,192H56V40H200ZM100,148a12,12,0,1,1-12-12A12,12,0,0,1,100,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,148Zm-80,40a12,12,0,1,1-12-12A12,12,0,0,1,100,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,188Z" />
-                  </svg>
-                  Get Cost Estimate
+              </Link>
+              <Link href="/cost-estimator" className="w-full sm:w-auto">
+                <button className="w-full px-10 h-16 bg-white/10 border border-white/20 text-white hover:bg-white/20 rounded-2xl font-bold flex items-center justify-center gap-3 text-lg backdrop-blur-md transition-all group">
+                  <Calculator size={22} className="text-blue-400 group-hover:scale-110 transition-transform" />
+                  Cost Estimator
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
 
           {/* Right Feature Cards */}
           <div className="space-y-6">
             {/* Card 1 */}
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all">
+            <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all">
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-300">
                   <Zap size={28} />
@@ -92,7 +72,7 @@ export default function Hero() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all lg:ml-12">
+            <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all lg:ml-12">
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-300">
                   <Shield size={28} />
@@ -105,7 +85,7 @@ export default function Hero() {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all">
+            <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all">
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-300">
                   <Users size={28} />

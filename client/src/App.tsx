@@ -15,9 +15,17 @@ import ProServicesPage from "@/pages/ProServicesPage";
 import TradeLicenseDubai from "@/pages/TradeLicenseDubai";
 import VisaServicesDubai from "@/pages/VisaServicesDubai";
 import DocumentClearingDubai from "@/pages/DocumentClearingDubai";
+import CostEstimatorPage from "@/pages/CostEstimatorPage";
+import AccountingServicesPage from "@/pages/AccountingServicesPage";
+import EmiratesIDServices from "@/pages/EmiratesIDServices";
+import LabourImmigrationServices from "@/pages/LabourImmigrationServices";
+import LicenseRenewalDubai from "@/pages/LicenseRenewalDubai";
+import BankAccountAssistanceDubai from "@/pages/BankAccountAssistanceDubai";
+import VATCorporateTaxDubai from "@/pages/VATCorporateTaxDubai";
 import ContactPage from "@/pages/ContactPage";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import NotFound from "@/pages/NotFound";
+import MobileStickyCTA from "@/components/MobileStickyCTA";
+import NotFoundPage from "@/pages/NotFoundPage";
 
 function App() {
   return (
@@ -25,7 +33,7 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
-          <div className="min-h-screen bg-slate-50">
+          <div className="min-h-screen bg-slate-50 pb-20 lg:pb-0">
             <Navigation />
             <main>
               <Switch>
@@ -39,12 +47,20 @@ function App() {
                 <Route path="/trade-license-dubai" component={TradeLicenseDubai} />
                 <Route path="/visa-services-dubai" component={VisaServicesDubai} />
                 <Route path="/document-clearing-dubai" component={DocumentClearingDubai} />
+                <Route path="/cost-estimator" component={CostEstimatorPage} />
+                <Route path="/accounting-services-dubai" component={AccountingServicesPage} />
+                <Route path="/emirates-id-services-dubai" component={EmiratesIDServices} />
+                <Route path="/labour-immigration-services-dubai" component={LabourImmigrationServices} />
+                <Route path="/license-renewal-dubai" component={LicenseRenewalDubai} />
+                <Route path="/bank-account-assistance-dubai" component={BankAccountAssistanceDubai} />
+                <Route path="/vat-corporate-tax-dubai" component={VATCorporateTaxDubai} />
                 <Route path="/contact" component={ContactPage} />
-                <Route component={NotFound} />
+                <Route component={NotFoundPage} />
               </Switch>
             </main>
             <Footer />
             <WhatsAppButton />
+            <MobileStickyCTA />
           </div>
         </TooltipProvider>
       </ThemeProvider>

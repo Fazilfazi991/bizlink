@@ -5,23 +5,24 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    Links: [
+    Company: [
       { label: "Home", href: "/" },
       { label: "About Bizlink", href: "/about" },
-      { label: "All Services", href: "/services" },
+      { label: "Cost Estimator", href: "/cost-estimator" },
       { label: "Contact Us", href: "/contact" },
     ],
-    Setup: [
-      { label: "Mainland Dubai", href: "/mainland-company-formation" },
+    "Business Setup": [
+      { label: "Business Setup Dubai", href: "/business-setup-dubai" },
+      { label: "Mainland Formation", href: "/mainland-company-formation" },
       { label: "Free Zone Setup", href: "/free-zone-company-setup" },
-      { label: "Business in Dubai", href: "/business-setup-dubai" },
-      { label: "PRO Services", href: "/pro-services-dubai" },
-    ],
-    Services: [
-      { label: "Visa Services", href: "/visa-services-dubai" },
       { label: "Trade License", href: "/trade-license-dubai" },
-      { label: "Document Clearing", href: "/document-clearing-dubai" },
-      { label: "Privacy Policy", href: "/#" },
+    ],
+    "PRO & Support": [
+      { label: "PRO Services", href: "/pro-services-dubai" },
+      { label: "Visa Services", href: "/visa-services-dubai" },
+      { label: "Emirates ID", href: "/emirates-id-services-dubai" },
+      { label: "Labour & Immigration", href: "/labour-immigration-services-dubai" },
+      { label: "License Renewal", href: "/license-renewal-dubai" },
     ],
   };
 

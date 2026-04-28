@@ -2,6 +2,7 @@ import PageHero from "@/components/PageHero";
 import SEO from "@/components/SEO";
 import FAQAccordion from "@/components/FAQAccordion";
 import ReusableCTA from "@/components/ReusableCTA";
+import TrustSection from "@/components/TrustSection";
 import { CheckCircle2, UserCheck, Users, Briefcase } from "lucide-react";
 
 export default function VisaServicesDubai() {
@@ -99,6 +100,7 @@ export default function VisaServicesDubai() {
         </div>
       </section>
 
+      <TrustSection />
       <FAQAccordion items={faqs} />
       <ReusableCTA 
         whatsappMessage="Hi Bizlink, I need help with visa and Emirates ID services in UAE."

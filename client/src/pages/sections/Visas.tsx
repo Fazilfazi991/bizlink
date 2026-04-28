@@ -104,7 +104,6 @@ export default function Visas() {
               </div>
             ))}
           </div>
-          </div>
         </div>
 
         {/* CTA */}

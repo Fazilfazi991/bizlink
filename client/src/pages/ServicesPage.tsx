@@ -110,16 +110,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Trust Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Need a Custom Solution?</h2>
-          <p className="text-lg text-slate-600 mb-10">Every business is unique. Our experts can tailor a service package specifically for your requirements.</p>
-          <Button size="lg" className="bg-slate-900 text-white hover:bg-slate-800 rounded-full font-bold px-10 py-7">
-            Schedule a Free Consultation
-          </Button>
-        </div>
-      </section>
+      <ReusableCTA 
+        title="Need a Custom Service Package?" 
+        description="Every business is unique. Our experts can tailor a service package specifically for your requirements and goals in the UAE."
+      />
     </>
   );
 }

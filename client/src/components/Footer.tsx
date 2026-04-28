@@ -8,20 +8,20 @@ export default function Footer() {
     Links: [
       { label: "Home", href: "/" },
       { label: "About Bizlink", href: "/about" },
-      { label: "Our Services", href: "/services" },
+      { label: "All Services", href: "/services" },
       { label: "Contact Us", href: "/contact" },
     ],
     Setup: [
       { label: "Mainland Dubai", href: "/mainland-company-formation" },
       { label: "Free Zone Setup", href: "/free-zone-company-setup" },
       { label: "Business in Dubai", href: "/business-setup-dubai" },
-      { label: "PRO Services", href: "/pro-services" },
+      { label: "PRO Services", href: "/pro-services-dubai" },
     ],
-    Support: [
-      { label: "Visa Services", href: "/pro-services" },
-      { label: "Trade License", href: "/services" },
+    Services: [
+      { label: "Visa Services", href: "/visa-services-dubai" },
+      { label: "Trade License", href: "/trade-license-dubai" },
+      { label: "Document Clearing", href: "/document-clearing-dubai" },
       { label: "Privacy Policy", href: "/#" },
-      { label: "Terms of Service", href: "/#" },
     ],
   };
 

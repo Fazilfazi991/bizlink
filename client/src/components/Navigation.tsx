@@ -24,9 +24,10 @@ export default function Navigation() {
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Services", href: "/services" },
     { label: "Business Setup", href: "/business-setup-dubai" },
-    { label: "PRO Services", href: "/pro-services" },
+    { label: "Mainland", href: "/mainland-company-formation" },
+    { label: "Free Zone", href: "/free-zone-company-setup" },
+    { label: "PRO Services", href: "/pro-services-dubai" },
     { label: "Contact", href: "/contact" },
   ];
 

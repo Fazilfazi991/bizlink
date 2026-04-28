@@ -105,22 +105,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-20 bg-blue-600 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32 blur-3xl" />
-        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to start your UAE business?</h2>
-          <p className="text-white/80 text-lg mb-10">Book a free consultation with our experts today and take the first step towards success.</p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-slate-100 rounded-full font-bold px-10 py-6">
-              Book Free Consultation
-            </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 rounded-full font-bold px-10 py-6">
-              WhatsApp Now
-            </Button>
-          </div>
-        </div>
-      </section>
+      <ReusableCTA 
+        title="Ready to start your UAE business?" 
+        description="Book a free consultation with our experts today and take the first step towards your corporate success in Dubai."
+      />
     </>
   );
 }

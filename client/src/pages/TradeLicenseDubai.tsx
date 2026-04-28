@@ -106,7 +106,9 @@ export default function TradeLicenseDubai() {
       </section>
 
       <FAQAccordion items={faqs} />
-      <ReusableCTA />
+      <ReusableCTA 
+        whatsappMessage="Hi Bizlink, I need help with trade license services in Dubai."
+      />
     </>
   );
 }

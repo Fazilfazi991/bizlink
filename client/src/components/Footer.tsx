@@ -89,7 +89,7 @@ export default function Footer() {
           <div>
             <p className="text-slate-400 text-sm mb-2">Contact</p>
             <p className="text-white font-semibold">
-              T: <a href="tel:+971547486000" className="hover:text-blue-400">+971 XX XXX XXXX</a>
+              T: <a href="tel:+971547486000" className="hover:text-blue-400">+971 54 748 6000</a>
             </p>
             <p className="text-white font-semibold">
               E: <a href="mailto:info@bizlinkdubai.info" className="hover:text-blue-400">info@bizlinkdubai.info</a>

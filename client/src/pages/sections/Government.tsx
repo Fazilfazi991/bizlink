@@ -49,6 +49,14 @@ export default function Government() {
             className="w-full rounded-2xl shadow-xl"
           />
         </div>
+        {/* CTA */}
+        <div className="mt-16 text-center">
+          <a href="/document-clearing-dubai">
+            <button className="px-10 py-4 bg-slate-900 text-white rounded-full font-bold hover:bg-slate-800 transition-colors shadow-lg">
+              View Document Clearing Services
+            </button>
+          </a>
+        </div>
       </div>
     </section>
   );

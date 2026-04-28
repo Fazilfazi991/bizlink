@@ -1,10 +1,26 @@
 import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLocation } from "wouter";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "+971547486000";
-  const message = encodeURIComponent("Hello Bizlink, I would like to inquire about business setup services in Dubai.");
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+  const [location] = useLocation();
+  const phoneNumber = "971547486000";
+  
+  let message = "Hi Bizlink, I need help with business setup in UAE. Please guide me.";
+
+  if (location === "/trade-license-dubai") {
+    message = "Hi Bizlink, I need help with trade license services in Dubai.";
+  } else if (location === "/visa-services-dubai") {
+    message = "Hi Bizlink, I need help with visa and Emirates ID services in UAE.";
+  } else if (location === "/document-clearing-dubai") {
+    message = "Hi Bizlink, I need help with document clearing services in Dubai.";
+  } else if (location === "/pro-services-dubai") {
+    message = "Hi Bizlink, I need help with PRO services in Dubai.";
+  } else if (location === "/contact") {
+    message = "Hi Bizlink, I would like to book a free consultation.";
+  }
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <motion.a

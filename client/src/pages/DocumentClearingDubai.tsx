@@ -102,7 +102,9 @@ export default function DocumentClearingDubai() {
       </section>
 
       <FAQAccordion items={faqs} />
-      <ReusableCTA />
+      <ReusableCTA 
+        whatsappMessage="Hi Bizlink, I need help with document clearing services in Dubai."
+      />
     </>
   );
 }

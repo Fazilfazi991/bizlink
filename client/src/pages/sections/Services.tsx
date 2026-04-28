@@ -73,10 +73,12 @@ export default function Services() {
 
                 {/* Learn More Link */}
                 <a
-                  href="#"
+                  href={service.title === "Business Setup" ? "/business-setup-dubai" : service.title === "PRO Solutions" ? "/pro-services-dubai" : "https://wa.me/971547486000?text=Hi%20Bizlink%2C%20I%20need%20help%20with%20accounting%20and%20tax%20services%20in%20Dubai."}
+                  target={service.title === "Accounting & Tax" ? "_blank" : "_self"}
+                  rel={service.title === "Accounting & Tax" ? "noopener noreferrer" : ""}
                   className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 group/link"
                 >
-                  Learn More
+                  {service.title === "Accounting & Tax" ? "Get Quote" : "Learn More"}
                   <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
                 </a>
               </div>

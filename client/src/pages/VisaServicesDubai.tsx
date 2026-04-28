@@ -100,7 +100,9 @@ export default function VisaServicesDubai() {
       </section>
 
       <FAQAccordion items={faqs} />
-      <ReusableCTA />
+      <ReusableCTA 
+        whatsappMessage="Hi Bizlink, I need help with visa and Emirates ID services in UAE."
+      />
     </>
   );
 }

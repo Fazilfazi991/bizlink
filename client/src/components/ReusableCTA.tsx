@@ -5,13 +5,16 @@ import { Link } from "wouter";
 interface ReusableCTAProps {
   title?: string;
   description?: string;
+  whatsappMessage?: string;
 }
 
 export default function ReusableCTA({ 
   title = "Ready to Launch Your UAE Business?", 
-  description = "Get expert guidance and end-to-end support for your company formation in Dubai." 
+  description = "Get expert guidance and end-to-end support for your company formation in Dubai.",
+  whatsappMessage = "Hi Bizlink, I need help with business setup in UAE. Please guide me."
 }: ReusableCTAProps) {
-  const whatsappUrl = "https://wa.me/+971547486000?text=Hello%20Bizlink%2C%20I%20would%20like%20to%20get%20a%20free%20consultation.";
+  const phoneNumber = "971547486000";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section className="py-20 bg-slate-900 overflow-hidden relative">
@@ -26,14 +29,14 @@ export default function ReusableCTA({
           {description}
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-block">
-            <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white gap-2 w-full sm:w-auto h-14 px-8 text-lg rounded-xl">
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
+            <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white gap-2 w-full h-14 px-8 text-lg rounded-xl transition-all">
               <MessageCircle size={24} />
               Chat on WhatsApp
             </Button>
           </a>
-          <Link href="/contact">
-            <Button size="lg" variant="outline" className="text-white border-white/20 hover:bg-white/10 gap-2 w-full sm:w-auto h-14 px-8 text-lg rounded-xl">
+          <Link href="/contact" className="w-full sm:w-auto">
+            <Button size="lg" variant="outline" className="text-white border-white/20 hover:bg-white/10 gap-2 w-full h-14 px-8 text-lg rounded-xl transition-all">
               Free Consultation
               <ArrowRight size={20} />
             </Button>

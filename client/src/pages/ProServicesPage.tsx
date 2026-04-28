@@ -70,7 +70,9 @@ export default function ProServicesPage() {
       </section>
 
       <FAQAccordion items={proFAQs} />
-      <ReusableCTA />
+      <ReusableCTA 
+        whatsappMessage="Hi Bizlink, I need help with PRO services in Dubai."
+      />
     </>
   );
 }

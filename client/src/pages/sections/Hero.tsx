@@ -40,9 +40,9 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#contact">
+              <a href="/contact">
                 <Button className="px-8 py-6 bg-blue-600 text-white hover:bg-blue-700 rounded-full font-semibold flex items-center gap-2 text-base">
-                  Start Now
+                  Start Your Business
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -54,19 +54,25 @@ export default function Hero() {
                   </svg>
                 </Button>
               </a>
-              <button className="px-8 py-6 bg-white/10 border border-white/20 text-white hover:bg-white/20 rounded-full font-semibold flex items-center gap-2 text-base transition-colors">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 256 256"
-                >
-                  <path d="M176,64v48H80V64Z" opacity="0.2" />
-                  <path d="M80,120h96a8,8,0,0,0,8-8V64a8,8,0,0,0-8-8H80a8,8,0,0,0-8,8v48A8,8,0,0,0,80,120Zm8-48h80v32H88ZM200,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V40A16,16,0,0,0,200,24Zm0,192H56V40H200ZM100,148a12,12,0,1,1-12-12A12,12,0,0,1,100,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,148Zm-80,40a12,12,0,1,1-12-12A12,12,0,0,1,100,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,188Z" />
-                </svg>
-                Cost Estimator
-              </button>
+              <a 
+                href="https://wa.me/971547486000?text=Hi%20Bizlink%2C%20I%20would%20like%20to%20get%20a%20cost%20estimate%20for%20my%20business%20setup%20in%20Dubai." 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <button className="px-8 py-6 bg-white/10 border border-white/20 text-white hover:bg-white/20 rounded-full font-semibold flex items-center gap-2 text-base transition-colors w-full sm:w-auto">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path d="M176,64v48H80V64Z" opacity="0.2" />
+                    <path d="M80,120h96a8,8,0,0,0,8-8V64a8,8,0,0,0-8-8H80a8,8,0,0,0-8,8v48A8,8,0,0,0,80,120Zm8-48h80v32H88ZM200,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V40A16,16,0,0,0,200,24Zm0,192H56V40H200ZM100,148a12,12,0,1,1-12-12A12,12,0,0,1,100,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,148Zm-80,40a12,12,0,1,1-12-12A12,12,0,0,1,100,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,188Z" />
+                  </svg>
+                  Get Cost Estimate
+                </button>
+              </a>
             </div>
           </div>
 

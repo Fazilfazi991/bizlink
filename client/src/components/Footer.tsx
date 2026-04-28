@@ -5,24 +5,30 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    Company: [
-      { label: "Home", href: "/" },
-      { label: "About Bizlink", href: "/about" },
-      { label: "Cost Estimator", href: "/cost-estimator" },
-      { label: "Contact Us", href: "/contact" },
-    ],
     "Business Setup": [
-      { label: "Business Setup Dubai", href: "/business-setup-dubai" },
-      { label: "Mainland Formation", href: "/mainland-company-formation" },
-      { label: "Free Zone Setup", href: "/free-zone-company-setup" },
-      { label: "Trade License", href: "/trade-license-dubai" },
+      { label: "Business Setup in Dubai", href: "/business-setup-dubai" },
+      { label: "Mainland Company Formation", href: "/mainland-company-formation" },
+      { label: "Free Zone Company Setup", href: "/free-zone-company-setup" },
+      { label: "Trade License Dubai", href: "/trade-license-dubai" },
     ],
-    "PRO & Support": [
-      { label: "PRO Services", href: "/pro-services-dubai" },
-      { label: "Visa Services", href: "/visa-services-dubai" },
-      { label: "Emirates ID", href: "/emirates-id-services-dubai" },
+    "PRO Services": [
+      { label: "PRO Services Dubai", href: "/pro-services-dubai" },
+      { label: "Visa Services Dubai", href: "/visa-services-dubai" },
+      { label: "Emirates ID Services", href: "/emirates-id-services-dubai" },
       { label: "Labour & Immigration", href: "/labour-immigration-services-dubai" },
-      { label: "License Renewal", href: "/license-renewal-dubai" },
+      { label: "Document Clearing Dubai", href: "/document-clearing-dubai" },
+      { label: "License Renewal Dubai", href: "/license-renewal-dubai" },
+    ],
+    "Business Support": [
+      { label: "Bank Account Assistance", href: "/bank-account-assistance-dubai" },
+      { label: "VAT & Corporate Tax Support", href: "/vat-corporate-tax-dubai" },
+      { label: "Accounting Services Dubai", href: "/accounting-services-dubai" },
+      { label: "Cost Estimator", href: "/cost-estimator" },
+    ],
+    "Company": [
+      { label: "About Us", href: "/about" },
+      { label: "Our Services", href: "/services" },
+      { label: "Contact Us", href: "/contact" },
     ],
   };
 
@@ -85,7 +91,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 border-t border-slate-800 mb-8">
           <div>
             <p className="text-slate-400 text-sm mb-2">Location</p>
-            <p className="text-white font-semibold">Dubai, United Arab Emirates</p>
+            <a
+              href="https://maps.app.goo.gl/rK5sK19VWfNqTdBQ9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white font-semibold hover:text-blue-400 transition-colors"
+            >
+              Office 11/202, Shaikha Mhara Bldg,<br />
+              Near Altwar Center, Al Qusais 2, Dubai
+            </a>
           </div>
           <div>
             <p className="text-slate-400 text-sm mb-2">Contact</p>

@@ -40,8 +40,8 @@ export default function Contact() {
     {
       icon: MapPin,
       label: "Location",
-      value: "Al Qusais, Dubai, UAE",
-      href: "#",
+      value: "Office 11/202, Shaikha Mhara Bldg, Near Altwar Center, Al Qusais 2, Dubai",
+      href: "https://maps.app.goo.gl/rK5sK19VWfNqTdBQ9",
     },
     {
       icon: Clock,

@@ -29,26 +29,26 @@ export default function Hero() {
                 #1 PRO SERVICES IN DUBAI
               </span>
               <h1 className="text-5xl lg:text-7xl font-black text-white leading-[1.1]">
-                Accelerate Your Business{" "}
+                Start Your UAE{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                  Expansion in Dubai
+                  Business With Confidence
                 </span>
               </h1>
               <p className="text-lg text-white/80 leading-relaxed max-w-xl">
-                We provide comprehensive government liaison and document clearing services, allowing you to focus on growing your business while we handle the rest.
+                Business setup, trade license, visa, PRO services, document clearing, and bank account assistance — handled with expert guidance from start to finish.
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/contact" className="w-full sm:w-auto">
-                <Button className="w-full px-10 h-16 bg-blue-600 text-white hover:bg-blue-700 rounded-2xl font-bold flex items-center justify-center gap-3 text-lg shadow-2xl shadow-blue-500/20 group">
-                  Start Your Business
+                <Button className="w-full sm:min-w-[200px] h-16 bg-blue-600 text-white hover:bg-blue-700 rounded-2xl font-bold flex items-center justify-center gap-3 text-lg shadow-2xl shadow-blue-500/20 group">
+                  Start Now
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link href="/cost-estimator" className="w-full sm:w-auto">
-                <button className="w-full px-10 h-16 bg-white/10 border border-white/20 text-white hover:bg-white/20 rounded-2xl font-bold flex items-center justify-center gap-3 text-lg backdrop-blur-md transition-all group">
+                <button className="w-full sm:min-w-[200px] h-16 bg-white/10 border border-white/20 text-white hover:bg-white/20 rounded-2xl font-bold flex items-center justify-center gap-3 text-lg backdrop-blur-md transition-all group">
                   <Calculator size={22} className="text-blue-400 group-hover:scale-110 transition-transform" />
                   Cost Estimator
                 </button>

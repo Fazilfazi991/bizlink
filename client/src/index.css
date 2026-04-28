@@ -53,11 +53,11 @@
   --chart-4: #1e40af;
   --chart-5: #1e3a8a;
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0.97 0.003 264);
   --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
+  --card: oklch(0.975 0.002 264);
   --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
+  --popover: oklch(0.975 0.002 264);
   --popover-foreground: oklch(0.235 0.015 65);
   --secondary: oklch(0.98 0.001 286.375);
   --secondary-foreground: oklch(0.4 0.015 65);
@@ -176,9 +176,35 @@
   }
 }
 
-/* Smooth scroll behavior */
+/* Global neutral tone shift — softens harsh whites */
+.bg-white {
+  background-color: #f7f8fa !important;
+}
+
+.bg-slate-50 {
+  background-color: #eef0f4 !important;
+}
+
+/* Keep cards/popover surfaces slightly lighter for depth contrast */
+.bg-white\/80 {
+  background-color: rgba(247, 248, 250, 0.8) !important;
+}
+
+.bg-white\/95 {
+  background-color: rgba(247, 248, 250, 0.95) !important;
+}
+
+/* Preserve pure white only where it's needed for contrast (icons, badges) */
+.bg-white.rounded-2xl.flex.items-center.justify-center,
+.bg-white\/5,
+.bg-white\/10 {
+  background-color: unset !important;
+}
+
+/* Smooth scroll behavior + site-wide zoom */
 html {
   scroll-behavior: smooth;
+  zoom: 0.7;
 }
 
 /* Custom scrollbar */
@@ -187,7 +213,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #eef0f4;
 }
 
 ::-webkit-scrollbar-thumb {

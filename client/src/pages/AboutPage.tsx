@@ -1,81 +1,121 @@
 import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
-import { Button } from "@/components/ui/button";
-import { Target, Eye, CheckCircle2, MessageSquare, FileCheck, ShieldCheck, HeartHandshake } from "lucide-react";
+import { Target, Eye, CheckCircle2, MessageSquare, FileCheck, ShieldCheck, HeartHandshake, Award, Users2, Globe, Zap, Building2 } from "lucide-react";
 import ReusableCTA from "@/components/ReusableCTA";
 
 export default function AboutPage() {
   const steps = [
-    { icon: MessageSquare, title: "Consultation", desc: "Initial discussion to understand your business goals." },
-    { icon: FileCheck, title: "Documentation", desc: "Accurate preparation of all required legal documents." },
-    { icon: ShieldCheck, title: "Approvals", desc: "Swift processing through government departments." },
-    { icon: HeartHandshake, title: "Ongoing Support", desc: "Continuous assistance for your business growth." },
+    { icon: MessageSquare, title: "Consultation", desc: "We begin with a deep dive into your business model and expansion goals." },
+    { icon: FileCheck, title: "Documentation", desc: "Our legal experts prepare and vet all necessary paperwork for 100% accuracy." },
+    { icon: ShieldCheck, title: "Approvals", desc: "Direct liaison with government departments ensures fast-track processing." },
+    { icon: HeartHandshake, title: "Ongoing Support", desc: "Continuous assistance to help you navigate and grow in the UAE market." },
   ];
 
   return (
     <>
       <SEO 
-        title="About Bizlink" 
-        description="Learn more about BIZLINK Documents Clearing LLC, your trusted partner for business setup and PRO services in Dubai, UAE."
+        title="About Bizlink | Dubai's Leading Business Consultancy" 
+        description="Learn more about BIZLINK Documents Clearing LLC. We are a premier business consultancy in Dubai, specializing in company formation, PRO, and corporate support."
       />
       <PageHero 
-        title="Your Trusted Partner for Business Setup & PRO Services in the UAE"
-        subtitle="We simplify the complexities of starting and running a business in Dubai, providing expert guidance every step of the way."
-        breadcrumb="About"
+        title="Your Strategic Partner in the UAE"
+        subtitle="Empowering global entrepreneurs to establish, scale, and succeed in the heart of Dubai."
       />
 
-      {/* Intro Section */}
-      <section className="py-20 bg-white">
+      {/* Intro Section with Stats */}
+      <section className="py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-slate-900">Who We Are</h2>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                BIZLINK Documents Clearing LLC is a premier business consultancy based in Dubai. With years of experience and deep roots in the UAE's regulatory landscape, we provide seamless solutions for entrepreneurs and corporations looking to establish and grow their presence in the region.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                Our team consists of seasoned experts who specialize in Mainland and Free Zone formations, government liaison (PRO), and document clearing. We pride ourselves on transparency, efficiency, and our commitment to client success.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
-                <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white mb-6">
-                  <Target size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Our Mission</h3>
-                <p className="text-slate-600 text-sm">To empower entrepreneurs by providing efficient, reliable, and transparent business setup solutions in the UAE.</p>
+            <div className="space-y-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-xs font-black uppercase tracking-widest">
+                <Award size={14} />
+                BIZLINK DOCUMENTS CLEARING LLC
               </div>
-              <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
-                <div className="w-12 h-12 bg-cyan-600 rounded-xl flex items-center justify-center text-white mb-6">
-                  <Eye size={24} />
+              <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">Driving Corporate Excellence Since Day One</h2>
+              <p className="text-lg text-slate-600 leading-relaxed">
+                BIZLINK is more than a document clearing agency; we are a strategic catalyst for business growth in the United Arab Emirates. Founded on the principles of transparency, speed, and integrity, we have helped thousands of entrepreneurs turn their UAE dreams into operational realities.
+              </p>
+              <div className="grid grid-cols-2 gap-8 pt-4">
+                <div>
+                  <div className="text-4xl font-black text-blue-600 mb-1">500+</div>
+                  <div className="text-slate-500 font-bold text-sm uppercase tracking-wider">Companies Formed</div>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Our Vision</h3>
-                <p className="text-slate-600 text-sm">To be the most trusted and preferred partner for all business-related services in the Middle East.</p>
+                <div>
+                  <div className="text-4xl font-black text-blue-600 mb-1">10k+</div>
+                  <div className="text-slate-500 font-bold text-sm uppercase tracking-wider">Documents Cleared</div>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <div className="aspect-square bg-slate-100 rounded-[2rem] overflow-hidden">
+                    <div className="w-full h-full bg-gradient-to-br from-blue-500 to-indigo-700 flex items-center justify-center p-8">
+                      <Globe className="text-white opacity-20" size={80} />
+                    </div>
+                  </div>
+                  <div className="p-8 bg-blue-600 text-white rounded-[2rem]">
+                    <h4 className="font-bold text-xl mb-2">Global Vision</h4>
+                    <p className="text-blue-100 text-xs">Supporting clients from over 50 countries.</p>
+                  </div>
+                </div>
+                <div className="space-y-4 pt-12">
+                  <div className="p-8 bg-slate-900 text-white rounded-[2rem]">
+                    <h4 className="font-bold text-xl mb-2">Local Roots</h4>
+                    <p className="text-slate-400 text-xs">Unmatched expertise in UAE regulatory law.</p>
+                  </div>
+                  <div className="aspect-square bg-slate-50 border border-slate-100 rounded-[2rem] flex items-center justify-center">
+                    <Building2 className="text-blue-600" size={48} />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20 bg-slate-900 text-white">
+      {/* Mission & Vision */}
+      <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Bizlink?</h2>
-            <p className="text-white/60 max-w-2xl mx-auto">We combine local expertise with international standards to deliver exceptional value.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="p-12 bg-white rounded-[3rem] border border-slate-200 hover:shadow-xl transition-all group">
+              <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform">
+                <Target size={32} />
+              </div>
+              <h3 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h3>
+              <p className="text-slate-600 text-lg leading-relaxed">To strip away the complexities of UAE bureaucracy, providing every entrepreneur with a clear, fast, and transparent path to business success through expert consultation and local liaison.</p>
+            </div>
+            <div className="p-12 bg-slate-900 text-white rounded-[3rem] border border-slate-800 hover:shadow-xl transition-all group">
+              <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform">
+                <Eye size={32} />
+              </div>
+              <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
+              <p className="text-slate-400 text-lg leading-relaxed">To become the UAE's most influential business gateway, recognized for setting the industry gold standard in professional document clearing and corporate advisory services.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values / Why Us */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">The BIZLINK Edge</h2>
+            <p className="text-slate-500 text-lg max-w-2xl mx-auto">Our reputation is built on six core pillars of excellence that define every interaction.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              "Expert local knowledge of UAE regulations",
-              "End-to-end management of all procedures",
-              "Competitive and transparent pricing",
-              "Dedicated account managers for every client",
-              "Fast-track processing for urgent requirements",
-              "Comprehensive after-setup support"
+              { icon: ShieldCheck, title: "Total Integrity", desc: "100% transparency in fees and government requirements." },
+              { icon: Zap, title: "Unmatched Speed", desc: "Optimized internal processes for rapid turnaround." },
+              { icon: Users2, title: "Dedicated PROs", desc: "Senior liaison officers assigned to your account." },
+              { icon: Globe, title: "Cultural Reach", desc: "Multi-lingual team supporting global entrepreneurs." },
+              { icon: Award, title: "Legal Expertise", desc: "In-depth knowledge of UAE Federal Labour & Corporate Law." },
+              { icon: HeartHandshake, title: "Client First", desc: "Personalized solutions tailored to your specific budget." }
             ].map((item, i) => (
-              <div key={i} className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
-                <CheckCircle2 className="text-blue-400 flex-shrink-0" />
-                <span className="font-medium">{item}</span>
+              <div key={i} className="flex flex-col p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 hover:border-blue-200 transition-colors">
+                <item.icon className="text-blue-600 mb-6" size={32} />
+                <h4 className="text-xl font-bold text-slate-900 mb-4">{item.title}</h4>
+                <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -83,23 +123,26 @@ export default function AboutPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-slate-900 text-white overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Seamless Process</h2>
-            <p className="text-slate-600">Four simple steps to get your business up and running.</p>
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">How We Work</h2>
+            <p className="text-slate-400 text-lg">A systematic approach to your corporate evolution.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-            {/* Connector Line */}
-            <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-100 -translate-y-12 z-0" />
-            
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
             {steps.map((step, i) => (
-              <div key={i} className="relative z-10 text-center">
-                <div className="w-16 h-16 bg-white border-2 border-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600 font-bold group-hover:bg-blue-600 group-hover:text-white transition-colors">
+              <div key={i} className="relative z-10 group text-center md:text-left">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 mx-auto md:mx-0 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
                   <step.icon size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{step.title}</h3>
-                <p className="text-slate-600 text-sm">{step.desc}</p>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4">
+                    <span className="text-sm font-black text-blue-500">STEP {i + 1}</span>
+                    <div className="h-px bg-slate-800 flex-grow"></div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white">{step.title}</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">{step.desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -107,8 +150,8 @@ export default function AboutPage() {
       </section>
 
       <ReusableCTA 
-        title="Ready to start your UAE business?" 
-        description="Book a free consultation with our experts today and take the first step towards your corporate success in Dubai."
+        title="Ready to Build Your Future in Dubai?" 
+        description="Our consultants are ready to turn your vision into a registered reality. Book your complimentary expansion strategy session today."
       />
     </>
   );

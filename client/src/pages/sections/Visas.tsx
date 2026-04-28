@@ -87,22 +87,39 @@ export default function Visas() {
         </div>
 
         {/* Ecosystem */}
-        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-12">
-          <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">
-            Our Ecosystem
-          </h3>
-          <p className="text-center text-slate-600 mb-8">
-            Direct integration with the UAE's primary service centers.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
-            {ecosystem.map((service) => (
-              <div
-                key={service}
-                className="bg-white rounded-lg p-4 text-center font-semibold text-slate-700 shadow-sm hover:shadow-md transition-shadow"
-              >
-                {service}
-              </div>
-            ))}
+        <div className="bg-gradient-to-r from-slate-900 to-blue-900 rounded-2xl p-12 overflow-hidden relative">
+          <div className="absolute inset-0 opacity-10"
+            style={{
+              backgroundImage: `url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="relative z-10">
+            <h3 className="text-2xl font-bold text-white mb-3 text-center">
+              Our Ecosystem
+            </h3>
+            <p className="text-center text-blue-200 mb-10">
+              Direct integration with the UAE's primary service centers.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
+              {[
+                { name: "Tasheel", emoji: "🏛️", color: "from-red-600/30 to-red-800/30" },
+                { name: "Amer", emoji: "🌿", color: "from-green-600/30 to-green-800/30" },
+                { name: "Tawjeeh", emoji: "📋", color: "from-red-600/30 to-red-800/30" },
+                { name: "ICP", emoji: "🔐", color: "from-blue-600/30 to-blue-800/30" },
+                { name: "MOHRE", emoji: "⚖️", color: "from-indigo-600/30 to-indigo-800/30" },
+                { name: "DED", emoji: "🏢", color: "from-blue-600/30 to-cyan-800/30" },
+              ].map((service) => (
+                <div
+                  key={service.name}
+                  className={`bg-gradient-to-br ${service.color} border border-white/10 rounded-xl p-4 text-center backdrop-blur-sm hover:scale-105 transition-transform`}
+                >
+                  <div className="text-3xl mb-2">{service.emoji}</div>
+                  <p className="text-white font-semibold text-sm">{service.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

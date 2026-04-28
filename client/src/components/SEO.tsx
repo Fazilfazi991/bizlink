@@ -7,12 +7,18 @@ interface SEOProps {
 
 export default function SEO({ title, description }: SEOProps) {
   useEffect(() => {
-    document.title = `${title} | BIZLINK Documents Clearing LLC`;
+    // Use title as-is since pages already include "| Bizlink"
+    document.title = title;
     
     if (description) {
-      const metaDescription = document.querySelector('meta[name="description"]');
+      let metaDescription = document.querySelector('meta[name="description"]');
       if (metaDescription) {
         metaDescription.setAttribute("content", description);
+      } else {
+        metaDescription = document.createElement("meta");
+        metaDescription.setAttribute("name", "description");
+        metaDescription.setAttribute("content", description);
+        document.head.appendChild(metaDescription);
       }
     }
   }, [title, description]);

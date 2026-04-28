@@ -27,39 +27,42 @@ export default function Navigation() {
     {
       label: "Business Setup",
       id: "business",
+      icon: Building2,
       links: [
-        { label: "Business Setup in Dubai", href: "/business-setup-dubai" },
-        { label: "Mainland Company Formation", href: "/mainland-company-formation" },
-        { label: "Free Zone Company Setup", href: "/free-zone-company-setup" },
-        { label: "Trade License Dubai", href: "/trade-license-dubai" },
+        { label: "Business Setup in Dubai", href: "/business-setup-dubai", desc: "Expert guidance for your new venture" },
+        { label: "Mainland Company Formation", href: "/mainland-company-formation", desc: "Unlimited trade license options" },
+        { label: "Free Zone Company Setup", href: "/free-zone-company-setup", desc: "100% ownership & tax benefits" },
+        { label: "Trade License Dubai", href: "/trade-license-dubai", desc: "Fast-track license issuance" },
       ]
     },
     {
       label: "PRO Services",
       id: "pro",
+      icon: ShieldCheck,
       links: [
-        { label: "PRO Services Dubai", href: "/pro-services-dubai" },
-        { label: "Visa Services Dubai", href: "/visa-services-dubai" },
-        { label: "Emirates ID Services", href: "/emirates-id-services-dubai" },
-        { label: "Labour & Immigration", href: "/labour-immigration-services-dubai" },
+        { label: "PRO Services Dubai", href: "/pro-services-dubai", desc: "Government liaison specialists" },
+        { label: "Visa Services Dubai", href: "/visa-services-dubai", desc: "Residency & investor visa support" },
+        { label: "Emirates ID Services", href: "/emirates-id-services-dubai", desc: "Biometrics & application handling" },
+        { label: "Labour & Immigration", href: "/labour-immigration-services-dubai", desc: "Employee quota & work permits" },
+        { label: "Document Clearing Dubai", href: "/document-clearing-dubai", desc: "Swift processing of legal papers" },
+        { label: "License Renewal Dubai", href: "/license-renewal-dubai", desc: "Keep your business active & compliant" },
       ]
     },
     {
-      label: "Corporate Support",
-      id: "corporate",
+      label: "Other Services",
+      id: "other",
+      icon: Briefcase,
       links: [
-        { label: "Document Clearing", href: "/document-clearing-dubai" },
-        { label: "Accounting & Tax", href: "/accounting-services-dubai" },
-        { label: "License Renewal", href: "/license-renewal-dubai" },
-        { label: "Bank Account Assistance", href: "/bank-account-assistance-dubai" },
-        { label: "VAT & Corporate Tax", href: "/vat-corporate-tax-dubai" },
+        { label: "Bank Account Assistance", href: "/bank-account-assistance-dubai", desc: "Corporate banking introductions" },
+        { label: "VAT & Corporate Tax", href: "/vat-corporate-tax-dubai", desc: "Tax registration & compliance" },
+        { label: "Accounting Services", href: "/accounting-services-dubai", desc: "Professional bookkeeping support" },
+        { label: "Cost Estimator", href: "/cost-estimator", desc: "Get an instant setup quote" },
       ]
     }
   ];
 
   const mainLinks = [
     { label: "About", href: "/about" },
-    { label: "Cost Estimator", href: "/cost-estimator" },
   ];
 
   return (
@@ -107,17 +110,33 @@ export default function Navigation() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      className="absolute top-full left-0 mt-4 w-72 bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden py-3"
+                      className="absolute top-full left-0 mt-4 w-[320px] bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden p-2"
                     >
-                      {group.links.map((link) => (
-                        <Link key={link.label} href={link.href}>
-                          <div className="px-5 py-3 hover:bg-slate-50 transition-colors group/item cursor-pointer">
-                            <p className="text-sm font-bold text-slate-900 group-hover/item:text-blue-600 transition-colors">
-                              {link.label}
-                            </p>
-                          </div>
-                        </Link>
-                      ))}
+                      <div className="bg-slate-50/50 p-3 rounded-xl mb-1 flex items-center gap-3">
+                        <div className="w-10 h-10 bg-white rounded-lg border border-slate-100 flex items-center justify-center text-blue-600 shadow-sm">
+                          <group.icon size={20} />
+                        </div>
+                        <div>
+                          <p className="text-[11px] font-black uppercase tracking-widest text-slate-400">Section</p>
+                          <p className="text-sm font-bold text-slate-900">{group.label}</p>
+                        </div>
+                      </div>
+                      <div className="py-1">
+                        {group.links.map((link) => (
+                          <Link key={link.label} href={link.href}>
+                            <div className="px-4 py-2.5 hover:bg-blue-50/50 rounded-xl transition-all group/item cursor-pointer flex flex-col">
+                              <p className="text-sm font-bold text-slate-900 group-hover/item:text-blue-600 transition-colors">
+                                {link.label}
+                              </p>
+                              {link.desc && (
+                                <p className="text-[11px] text-slate-500 line-clamp-1 group-hover/item:text-slate-600">
+                                  {link.desc}
+                                </p>
+                              )}
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>

@@ -86,7 +86,6 @@ export default function LeadForm({ title = "Get a Free Consultation" }: { title?
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="Mainland Company Setup">Mainland Company Setup</SelectItem>
-                    <SelectItem value="Free Zone Setup">Free Zone Setup</SelectItem>
                     <SelectItem value="PRO Services">PRO Services</SelectItem>
                     <SelectItem value="Visa Services">Visa Services</SelectItem>
                     <SelectItem value="Trade License">Trade License</SelectItem>
@@ -94,6 +93,7 @@ export default function LeadForm({ title = "Get a Free Consultation" }: { title?
                   </SelectContent>
                 </Select>
               </div>
+              
               <div className="space-y-2">
                 <label className="text-sm font-medium text-slate-700">Message</label>
                 <Textarea 

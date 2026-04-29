@@ -22,7 +22,7 @@ export default function About() {
           <div className="relative">
             <div className="absolute -top-8 -left-8 w-48 h-48 bg-blue-100 rounded-3xl z-0 opacity-50" />
             <img
-              src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80"
+              src="/bizlink-office.jpg"
               alt="BIZLINK Strategic Business Partner - Dubai Office"
               className="w-full rounded-3xl shadow-2xl relative z-10"
             />

@@ -8,7 +8,7 @@ export default function Hero() {
       id="hero"
       className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-700 relative overflow-hidden pt-32 pb-20"
       style={{
-        backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663459703247/ZYuYH7eryfBQCq8ZAHFd5n/hero-dubai-skyline-6dpULCW7RSqDHWvoaDqD2q.webp')`,
+        backgroundImage: `url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",

@@ -88,9 +88,9 @@ export default function Visas() {
 
         {/* Ecosystem */}
         <div className="bg-gradient-to-r from-slate-900 to-blue-900 rounded-2xl p-12 overflow-hidden relative">
-          <div className="absolute inset-0 opacity-10"
+          <div className="absolute inset-0 opacity-20"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80')`,
+              backgroundImage: `url('https://images.unsplash.com/photo-1577412647305-991150c7d163?w=1200&q=80')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}

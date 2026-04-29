@@ -13,7 +13,7 @@ export default function PageHero({ title, subtitle, breadcrumb }: PageHeroProps)
       <div 
         className="absolute inset-0 z-0 opacity-40 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663459703247/ZYuYH7eryfBQCq8ZAHFd5n/hero-dubai-skyline-6dpULCW7RSqDHWvoaDqD2q.webp')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80')`,
         }}
       />
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-slate-900/90 via-slate-900/80 to-slate-900/90" />

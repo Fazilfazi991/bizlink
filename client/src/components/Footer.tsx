@@ -46,7 +46,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">BIZLINK</h3>
+            <img
+              src="/bizlink-logo.png"
+              alt="BIZLINK Logo"
+              className="h-14 w-auto object-contain mb-4"
+            />
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               Your premier partner for document clearing and business services in Dubai. We simplify the path to your corporate success with expert guidance and efficient processing.
             </p>

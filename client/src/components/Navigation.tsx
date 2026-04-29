@@ -79,7 +79,7 @@ export default function Navigation() {
             <img
               src="/bizlink-logo.png"
               alt="BIZLINK Logo"
-              className="h-12 w-auto object-contain"
+              className="h-16 md:h-20 w-auto object-contain"
             />
           </Link>
 

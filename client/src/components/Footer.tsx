@@ -49,7 +49,7 @@ export default function Footer() {
             <img
               src="/bizlink-logo.png"
               alt="BIZLINK Logo"
-              className="h-14 w-auto object-contain mb-4"
+              className="h-20 w-auto object-contain mb-6"
             />
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               Your premier partner for document clearing and business services in Dubai. We simplify the path to your corporate success with expert guidance and efficient processing.

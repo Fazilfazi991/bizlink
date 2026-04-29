@@ -104,19 +104,19 @@ export default function Visas() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
               {[
-                { name: "Tasheel", emoji: "🏛️", color: "from-red-600/30 to-red-800/30" },
-                { name: "Amer", emoji: "🌿", color: "from-green-600/30 to-green-800/30" },
-                { name: "Tawjeeh", emoji: "📋", color: "from-red-600/30 to-red-800/30" },
-                { name: "ICP", emoji: "🔐", color: "from-blue-600/30 to-blue-800/30" },
-                { name: "MOHRE", emoji: "⚖️", color: "from-indigo-600/30 to-indigo-800/30" },
-                { name: "DED", emoji: "🏢", color: "from-blue-600/30 to-cyan-800/30" },
+                { name: "Tasheel", logo: "/logos/tasheel.png" },
+                { name: "Amer", logo: "/logos/amer.png" },
+                { name: "Tawjeeh", logo: "/logos/tawjeeh.png" },
+                { name: "ICP", logo: "/logos/icp.png" },
+                { name: "MOHRE", logo: "/logos/mohre.png" },
+                { name: "DED", logo: "/logos/ded.png" },
               ].map((service) => (
                 <div
                   key={service.name}
-                  className={`bg-gradient-to-br ${service.color} border border-white/10 rounded-xl p-4 text-center backdrop-blur-sm hover:scale-105 transition-transform`}
+                  className="bg-white/95 border border-white/10 rounded-xl p-4 text-center backdrop-blur-sm hover:scale-105 transition-transform flex flex-col items-center justify-center min-h-[100px]"
                 >
-                  <div className="text-3xl mb-2">{service.emoji}</div>
-                  <p className="text-white font-semibold text-sm">{service.name}</p>
+                  <img src={service.logo} alt={service.name} className="h-10 w-auto object-contain mb-2" />
+                  <p className="text-slate-900 font-bold text-xs">{service.name}</p>
                 </div>
               ))}
             </div>

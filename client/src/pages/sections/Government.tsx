@@ -101,7 +101,7 @@ export default function Government() {
               <img
                 src={partner.logo}
                 alt={partner.name + " logo"}
-                className="h-10 w-auto object-contain mb-2 grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="h-10 w-auto object-contain mb-2 transition-all duration-300"
                 onError={(e) => {
                   const target = e.currentTarget;
                   target.style.display = "none";

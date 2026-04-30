@@ -4,6 +4,7 @@ import Services from "./sections/Services";
 import Government from "./sections/Government";
 import Visas from "./sections/Visas";
 import Testimonials from "./sections/Testimonials";
+import SetupSteps from "./sections/SetupSteps";
 import Contact from "./sections/Contact";
 import SEO from "@/components/SEO";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -48,12 +49,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Mainland or Free Zone?
+              Mainland, Free Zone, or Offshore?
             </h2>
             <p className="text-slate-600 text-lg">We’ll Help You Choose the Right Option for Your Business.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="p-8 rounded-3xl border border-slate-200 bg-slate-50 hover:border-blue-200 transition-colors">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Mainland Company</h3>
               <div className="space-y-4">
@@ -89,9 +90,29 @@ export default function Home() {
                 ))}
               </div>
             </div>
+
+            <div className="p-8 rounded-3xl border border-slate-200 bg-slate-50 hover:border-blue-200 transition-colors">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Offshore Company</h3>
+              <div className="space-y-4">
+                {[
+                  { text: "Ideal for asset protection & holdings", pos: true },
+                  { text: "100% tax exemption & repatriation", pos: true },
+                  { text: "High level of privacy & confidentiality", pos: true },
+                  { text: "Cannot trade within the UAE", pos: false },
+                  { text: "No residency visas provided", pos: false }
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3">
+                    <CheckCircle2 className="text-blue-500 flex-shrink-0" />
+                    <span className="text-slate-700">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <SetupSteps />
 
       <Government />
       <Visas />

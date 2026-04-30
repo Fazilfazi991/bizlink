@@ -21,18 +21,26 @@ export default function About() {
           {/* Left Image */}
           <div className="relative">
             <div className="absolute -top-8 -left-8 w-48 h-48 bg-blue-100 rounded-3xl z-0 opacity-50" />
-            <img
-              src="/bizlink-office.jpg"
-              alt="BIZLINK Strategic Business Partner - Dubai Office"
-              className="w-full rounded-3xl shadow-2xl relative z-10"
-            />
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl z-20">
+            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Modern Dubai Business Setup Office"
+                className="w-full h-full object-cover"
+              />
+              {/* Subtle gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent"></div>
+            </div>
+            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl z-20 border border-slate-100">
               <div className="text-center">
                 <div className="text-4xl font-bold text-blue-600">15+</div>
                 <div className="text-sm font-semibold text-slate-700 uppercase tracking-wide">
                   Years of Expertise
                 </div>
               </div>
+            </div>
+            {/* Extra floating badge top right */}
+            <div className="absolute -top-4 -right-4 bg-blue-600 text-white rounded-2xl px-4 py-2 shadow-lg z-20 text-xs font-bold uppercase tracking-wider">
+              🇦🇪 UAE Licensed
             </div>
           </div>
 

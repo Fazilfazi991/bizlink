@@ -20,8 +20,8 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email Us",
-      details: "info@bizlinkdubai.info",
-      href: "mailto:info@bizlinkdubai.info",
+      details: "info@bizlinkdc.com",
+      href: "mailto:info@bizlinkdc.com",
     },
     {
       icon: MapPin,

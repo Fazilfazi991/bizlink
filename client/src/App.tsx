@@ -11,6 +11,7 @@ import ServicesPage from "@/pages/ServicesPage";
 import BusinessSetupDubai from "@/pages/BusinessSetupDubai";
 import MainlandCompanyFormation from "@/pages/MainlandCompanyFormation";
 import FreeZoneCompanySetup from "@/pages/FreeZoneCompanySetup";
+import OffshoreCompanySetup from "@/pages/OffshoreCompanySetup";
 import ProServicesPage from "@/pages/ProServicesPage";
 import TradeLicenseDubai from "@/pages/TradeLicenseDubai";
 import VisaServicesDubai from "@/pages/VisaServicesDubai";
@@ -23,6 +24,9 @@ import LicenseRenewalDubai from "@/pages/LicenseRenewalDubai";
 import BankAccountAssistanceDubai from "@/pages/BankAccountAssistanceDubai";
 import VATCorporateTaxDubai from "@/pages/VATCorporateTaxDubai";
 import ContactPage from "@/pages/ContactPage";
+import DocumentAttestationServices from "@/pages/DocumentAttestationServices";
+import DubaiCourtServices from "@/pages/DubaiCourtServices";
+import InsuranceServices from "@/pages/InsuranceServices";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MobileStickyCTA from "@/components/MobileStickyCTA";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -45,6 +49,7 @@ function App() {
                 <Route path="/business-setup-dubai" component={BusinessSetupDubai} />
                 <Route path="/mainland-company-formation" component={MainlandCompanyFormation} />
                 <Route path="/free-zone-company-setup" component={FreeZoneCompanySetup} />
+                <Route path="/offshore-company-setup-dubai" component={OffshoreCompanySetup} />
                 <Route path="/pro-services-dubai" component={ProServicesPage} />
                 <Route path="/trade-license-dubai" component={TradeLicenseDubai} />
                 <Route path="/visa-services-dubai" component={VisaServicesDubai} />
@@ -56,6 +61,9 @@ function App() {
                 <Route path="/license-renewal-dubai" component={LicenseRenewalDubai} />
                 <Route path="/bank-account-assistance-dubai" component={BankAccountAssistanceDubai} />
                 <Route path="/vat-corporate-tax-dubai" component={VATCorporateTaxDubai} />
+                <Route path="/document-attestation-dubai" component={DocumentAttestationServices} />
+                <Route path="/dubai-court-services" component={DubaiCourtServices} />
+                <Route path="/insurance-services-uae" component={InsuranceServices} />
                 <Route path="/contact" component={ContactPage} />
                 <Route component={NotFoundPage} />
               </Switch>

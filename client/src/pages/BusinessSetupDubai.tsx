@@ -44,7 +44,7 @@ export default function BusinessSetupDubai() {
     {
       title: "Offshore Setup",
       icon: ShieldCheck,
-      link: "/services",
+      link: "/offshore-company-setup-dubai",
       desc: "Designed specifically for asset protection, holding companies, and global tax planning.",
       features: ["Asset protection", "Zero corporate tax", "High confidentiality", "International banking access"]
     }
@@ -158,6 +158,54 @@ export default function BusinessSetupDubai() {
                 <div className="text-slate-900 font-bold text-sm mb-1">Business Activities</div>
                 <p className="text-slate-500 text-xs leading-relaxed font-medium">Fully open for 100% foreign ownership in the UAE Mainland.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Comparison Section */}
+      <section className="py-24 bg-white relative border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Mainland, Free Zone, or Offshore?</h2>
+            <p className="text-slate-500 text-lg max-w-2xl mx-auto">We'll Help You Choose the Right Option for Your Business.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Mainland */}
+            <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all">
+              <h3 className="text-2xl font-black text-slate-900 mb-6 pb-4 border-b border-slate-200">Mainland Company</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-green-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">Trade anywhere in UAE & internationally</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-green-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">No limit on number of visas</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-green-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">Government contracts eligible</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-green-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">100% foreign ownership</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">Physical office required</span></li>
+              </ul>
+            </div>
+            
+            {/* Free Zone */}
+            <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all">
+              <h3 className="text-2xl font-black text-slate-900 mb-6 pb-4 border-b border-slate-200">Free Zone Company</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">100% corporate & personal tax exemption</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">100% import & export tax exemption</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">No physical office required (Flexi-desk)</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">Quick & easy registration</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">Restricted trade within UAE mainland</span></li>
+              </ul>
+            </div>
+            
+            {/* Offshore */}
+            <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all">
+              <h3 className="text-2xl font-black text-slate-900 mb-6 pb-4 border-b border-slate-200">Offshore Company</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">Ideal for asset protection & holdings</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">100% tax exemption & repatriation</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">High level of privacy & confidentiality</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">Cannot trade within the UAE</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /><span className="text-slate-700 font-medium">No residency visas provided</span></li>
+              </ul>
             </div>
           </div>
         </div>

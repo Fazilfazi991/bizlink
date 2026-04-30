@@ -32,6 +32,7 @@ export default function Navigation() {
         { label: "Business Setup in Dubai", href: "/business-setup-dubai", desc: "Expert guidance for your new venture" },
         { label: "Mainland Company Formation", href: "/mainland-company-formation", desc: "Unlimited trade license options" },
         { label: "Free Zone Company Setup", href: "/free-zone-company-setup", desc: "100% ownership & tax benefits" },
+        { label: "Offshore Company Setup", href: "/offshore-company-setup-dubai", desc: "Asset protection & holdings" },
         { label: "Trade License Dubai", href: "/trade-license-dubai", desc: "Fast-track license issuance" },
       ]
     },
@@ -46,6 +47,8 @@ export default function Navigation() {
         { label: "Labour & Immigration", href: "/labour-immigration-services-dubai", desc: "Employee quota & work permits" },
         { label: "Document Clearing Dubai", href: "/document-clearing-dubai", desc: "Swift processing of legal papers" },
         { label: "License Renewal Dubai", href: "/license-renewal-dubai", desc: "Keep your business active & compliant" },
+        { label: "Document Attestation", href: "/document-attestation-dubai", desc: "MoFA & Embassy attestation" },
+        { label: "Dubai Court Services", href: "/dubai-court-services", desc: "Notary & legal translations" },
       ]
     },
     {
@@ -56,6 +59,7 @@ export default function Navigation() {
         { label: "Bank Account Assistance", href: "/bank-account-assistance-dubai", desc: "Corporate banking introductions" },
         { label: "VAT & Corporate Tax", href: "/vat-corporate-tax-dubai", desc: "Tax registration & compliance" },
         { label: "Accounting Services", href: "/accounting-services-dubai", desc: "Professional bookkeeping support" },
+        { label: "Insurance Services", href: "/insurance-services-uae", desc: "Corporate & health insurance" },
         { label: "Cost Estimator", href: "/cost-estimator", desc: "Get an instant setup quote" },
       ]
     }

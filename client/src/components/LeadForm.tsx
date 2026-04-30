@@ -89,6 +89,9 @@ export default function LeadForm({ title = "Get a Free Consultation" }: { title?
                     <SelectItem value="PRO Services">PRO Services</SelectItem>
                     <SelectItem value="Visa Services">Visa Services</SelectItem>
                     <SelectItem value="Trade License">Trade License</SelectItem>
+                    <SelectItem value="Document Attestation">Document Attestation</SelectItem>
+                    <SelectItem value="Dubai Court Services">Dubai Court Services</SelectItem>
+                    <SelectItem value="Insurance Services">Insurance Services</SelectItem>
                     <SelectItem value="Other Inquiry">Other Inquiry</SelectItem>
                   </SelectContent>
                 </Select>

@@ -23,8 +23,8 @@ export default function About() {
             <div className="absolute -top-8 -left-8 w-48 h-48 bg-blue-100 rounded-3xl z-0 opacity-50" />
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
               <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Modern Dubai Business Setup Office"
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Dubai Skyline with Burj Khalifa"
                 className="w-full h-full object-cover"
               />
               {/* Subtle gradient overlay */}

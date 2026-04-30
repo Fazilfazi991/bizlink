@@ -45,8 +45,14 @@ export default function Home() {
       <Services />
 
       {/* Comparison Section */}
-      <section className="py-24 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 relative border-b border-slate-200 bg-[#f8fafc] overflow-hidden">
+        {/* Subtle Wavy Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cpath d='M0,400 Q100,300 200,400 T400,400 T600,400 T800,400' fill='none' stroke='%23000' stroke-width='4'/%3E%3Cpath d='M0,200 Q100,100 200,200 T400,200 T600,200 T800,200' fill='none' stroke='%23000' stroke-width='4'/%3E%3Cpath d='M0,600 Q100,500 200,600 T400,600 T600,600 T800,600' fill='none' stroke='%23000' stroke-width='4'/%3E%3Cpath d='M0,800 Q100,700 200,800 T400,800 T600,800 T800,800' fill='none' stroke='%23000' stroke-width='4'/%3E%3Cpath d='M0,0 Q100,-100 200,0 T400,0 T600,0 T800,0' fill='none' stroke='%23000' stroke-width='4'/%3E%3C/svg%3E")`,
+          backgroundSize: '400px 400px',
+        }}></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Mainland, Free Zone, or Offshore?
@@ -55,7 +61,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="p-8 rounded-3xl border border-slate-200 bg-slate-50 hover:border-blue-200 transition-colors">
+            <div className="p-8 rounded-3xl border border-slate-200 bg-white hover:border-blue-200 transition-colors">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Mainland Company</h3>
               <div className="space-y-4">
                 {[
@@ -73,7 +79,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="p-8 rounded-3xl border border-slate-200 bg-slate-50 hover:border-blue-200 transition-colors">
+            <div className="p-8 rounded-3xl border border-slate-200 bg-white hover:border-blue-200 transition-colors">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Free Zone Company</h3>
               <div className="space-y-4">
                 {[
@@ -91,7 +97,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="p-8 rounded-3xl border border-slate-200 bg-slate-50 hover:border-blue-200 transition-colors">
+            <div className="p-8 rounded-3xl border border-slate-200 bg-white hover:border-blue-200 transition-colors">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Offshore Company</h3>
               <div className="space-y-4">
                 {[

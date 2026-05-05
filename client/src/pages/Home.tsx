@@ -51,44 +51,49 @@ export default function Home() {
       </ScrollReveal>
 
       {/* Comparison Section */}
-      <section className="py-24 relative border-b border-slate-200 bg-[#f8fafc] overflow-hidden">
-        {/* Subtle Wavy Background Pattern */}
-        <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cpath d='M0,400 Q100,300 200,400 T400,400 T600,400 T800,400' fill='none' stroke='%23000' stroke-width='4'/%3E%3Cpath d='M0,200 Q100,100 200,200 T400,200 T600,200 T800,200' fill='none' stroke='%23000' stroke-width='4'/%3E%3Cpath d='M0,600 Q100,500 200,600 T400,600 T600,600 T800,600' fill='none' stroke='%23000' stroke-width='4'/%3E%3Cpath d='M0,800 Q100,700 200,800 T400,800 T600,800 T800,800' fill='none' stroke='%23000' stroke-width='4'/%3E%3Cpath d='M0,0 Q100,-100 200,0 T400,0 T600,0 T800,0' fill='none' stroke='%23000' stroke-width='4'/%3E%3C/svg%3E")`,
-          backgroundSize: '400px 400px',
+      <section className="py-24 relative border-b border-slate-200 bg-white overflow-hidden">
+        {/* Subtle Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230f172a' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                Mainland, Free Zone, or Offshore?
+              <span className="text-blue-600 font-bold text-sm tracking-widest uppercase mb-2 block">Corporate Architecture</span>
+              <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                Choose Your Launchpad
               </h2>
-              <p className="text-slate-600 text-lg">We’ll Help You Choose the Right Option for Your Business.</p>
+              <p className="text-slate-500 text-lg max-w-2xl mx-auto">We provide strategic counsel to align your operational goals with the perfect UAE corporate structure.</p>
             </div>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Mainland */}
             <ScrollReveal animation="fade-up" delay={0.1}>
-              <div className="flex flex-col bg-[#0b1b28] rounded-[2rem] overflow-hidden text-white shadow-xl hover:-translate-y-2 transition-transform duration-300 h-full">
-                <div className="h-64 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b1b28] to-transparent z-10 opacity-80"></div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                    alt="Dubai Mainland" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="group flex flex-col bg-slate-50 border border-slate-200 rounded-[2.5rem] overflow-hidden hover:shadow-2xl hover:border-blue-200 transition-all duration-500 h-full relative">
+                <div className="h-56 overflow-hidden relative p-4 pb-0">
+                  <div className="absolute inset-0 bg-slate-100 rounded-t-[2rem] mx-4 mt-4 overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                      alt="Dubai Mainland" 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4">
+                      <span className="px-3 py-1 bg-white/20 backdrop-blur-md text-white text-xs font-bold rounded-full uppercase tracking-wider">Unrestricted</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-8 pt-0 flex-1 flex flex-col relative z-20">
-                  <h3 className="text-2xl font-bold mb-4">Mainland</h3>
-                  <p className="text-slate-300 text-sm leading-relaxed mb-8 flex-1">
-                    Set up a mainland company in UAE through the Department of Economic Development (DED) and gain unrestricted access to the local UAE market, prime business locations, and government contracts. Mainland companies allow 100% foreign ownership in most sectors and can trade freely with other businesses across all emirates.
+                <div className="p-10 pt-8 flex-1 flex flex-col relative z-20 bg-white m-4 mt-0 rounded-b-[2rem] border border-slate-100 shadow-sm group-hover:shadow-md transition-shadow">
+                  <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">Mainland Setup</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-8 flex-1 font-medium">
+                    Establish a powerful local presence licensed by the DED. Ideal for businesses looking to trade directly in the local UAE market, bid on lucrative government contracts, and operate without geographical limitations across all Emirates. Enjoy 100% foreign ownership in thousands of commercial activities.
                   </p>
                   <div className="mt-auto">
                     <Link href="/mainland-company-formation">
-                      <button className="bg-gradient-to-r from-blue-600 to-green-500 text-white px-6 py-3 rounded-full text-sm font-bold flex items-center gap-2 hover:opacity-90 transition-opacity">
-                        Learn More <ArrowRight size={16} />
+                      <button className="w-full py-4 bg-slate-50 text-blue-600 rounded-xl font-black uppercase text-xs tracking-widest border border-blue-100 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all flex items-center justify-center gap-2">
+                        Explore Mainland <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                       </button>
                     </Link>
                   </div>
@@ -98,24 +103,29 @@ export default function Home() {
 
             {/* Freezone */}
             <ScrollReveal animation="fade-up" delay={0.2}>
-              <div className="flex flex-col bg-[#0d102e] rounded-[2rem] overflow-hidden text-white shadow-xl hover:-translate-y-2 transition-transform duration-300 h-full">
-                <div className="h-64 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d102e] to-transparent z-10 opacity-80"></div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                    alt="Dubai Freezone" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="group flex flex-col bg-slate-50 border border-slate-200 rounded-[2.5rem] overflow-hidden hover:shadow-2xl hover:border-blue-200 transition-all duration-500 h-full relative">
+                <div className="h-56 overflow-hidden relative p-4 pb-0">
+                  <div className="absolute inset-0 bg-slate-100 rounded-t-[2rem] mx-4 mt-4 overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                      alt="Dubai Freezone" 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4">
+                      <span className="px-3 py-1 bg-white/20 backdrop-blur-md text-white text-xs font-bold rounded-full uppercase tracking-wider">Tax-Optimized</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-8 pt-0 flex-1 flex flex-col relative z-20">
-                  <h3 className="text-2xl font-bold mb-4">Freezone</h3>
-                  <p className="text-slate-300 text-sm leading-relaxed mb-8 flex-1">
-                    UAE free zones offer 100% foreign ownership, 0% corporate tax on qualifying income, and the freedom to operate internationally. With 40+ free zones available — including DMCC, IFZA, and RAKEZ — foreign investors can find a jurisdiction that matches their industry, budget, and business activity.
+                <div className="p-10 pt-8 flex-1 flex flex-col relative z-20 bg-white m-4 mt-0 rounded-b-[2rem] border border-slate-100 shadow-sm group-hover:shadow-md transition-shadow">
+                  <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">Free Zone Setup</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-8 flex-1 font-medium">
+                    The ultimate gateway for international trade and service providers. Benefit from 100% foreign ownership, full capital repatriation, and zero currency restrictions. With over 40 distinct zones like IFZA, DMCC, and RAKEZ, we'll place you in the perfect ecosystem for your industry niche.
                   </p>
                   <div className="mt-auto">
                     <Link href="/free-zone-company-setup">
-                      <button className="bg-gradient-to-r from-blue-600 to-green-500 text-white px-6 py-3 rounded-full text-sm font-bold flex items-center gap-2 hover:opacity-90 transition-opacity">
-                        Learn More <ArrowRight size={16} />
+                      <button className="w-full py-4 bg-slate-50 text-blue-600 rounded-xl font-black uppercase text-xs tracking-widest border border-blue-100 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all flex items-center justify-center gap-2">
+                        Explore Free Zone <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                       </button>
                     </Link>
                   </div>
@@ -125,24 +135,29 @@ export default function Home() {
 
             {/* Offshore */}
             <ScrollReveal animation="fade-up" delay={0.3}>
-              <div className="flex flex-col bg-[#305c4f] rounded-[2rem] overflow-hidden text-white shadow-xl hover:-translate-y-2 transition-transform duration-300 h-full">
-                <div className="h-64 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#305c4f] to-transparent z-10 opacity-80"></div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1526495124232-a04e1849168c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                    alt="Dubai Offshore" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="group flex flex-col bg-slate-50 border border-slate-200 rounded-[2.5rem] overflow-hidden hover:shadow-2xl hover:border-blue-200 transition-all duration-500 h-full relative">
+                <div className="h-56 overflow-hidden relative p-4 pb-0">
+                  <div className="absolute inset-0 bg-slate-100 rounded-t-[2rem] mx-4 mt-4 overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1526495124232-a04e1849168c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                      alt="Dubai Offshore" 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4">
+                      <span className="px-3 py-1 bg-white/20 backdrop-blur-md text-white text-xs font-bold rounded-full uppercase tracking-wider">Wealth Protection</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-8 pt-0 flex-1 flex flex-col relative z-20">
-                  <h3 className="text-2xl font-bold mb-4">Offshore</h3>
-                  <p className="text-slate-300 text-sm leading-relaxed mb-8 flex-1">
-                    Register an offshore company in UAE through designated jurisdictions such as RAK ICC or JAFZA to benefit from 0% tax, full confidentiality, and no requirement for a physical office. Offshore structures are ideal for international trading, asset protection, and holding companies.
+                <div className="p-10 pt-8 flex-1 flex flex-col relative z-20 bg-white m-4 mt-0 rounded-b-[2rem] border border-slate-100 shadow-sm group-hover:shadow-md transition-shadow">
+                  <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">Offshore Setup</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-8 flex-1 font-medium">
+                    A highly confidential, tax-efficient vehicle designed for global asset protection, international trading, and holding structures. Establish your non-resident company in premium jurisdictions like RAK ICC or JAFZA without the need for a physical office or local residency visas.
                   </p>
                   <div className="mt-auto">
                     <Link href="/offshore-company-setup-dubai">
-                      <button className="bg-gradient-to-r from-blue-600 to-green-500 text-white px-6 py-3 rounded-full text-sm font-bold flex items-center gap-2 hover:opacity-90 transition-opacity">
-                        Learn More <ArrowRight size={16} />
+                      <button className="w-full py-4 bg-slate-50 text-blue-600 rounded-xl font-black uppercase text-xs tracking-widest border border-blue-100 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all flex items-center justify-center gap-2">
+                        Explore Offshore <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                       </button>
                     </Link>
                   </div>

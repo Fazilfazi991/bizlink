@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import ScrollReveal from "@/components/ScrollReveal";
 
 interface PageHeroProps {
   title: string;
@@ -25,19 +26,26 @@ export default function PageHero({ title, subtitle, breadcrumb }: PageHeroProps)
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="space-y-4">
           {/* Breadcrumbs */}
-          <nav className="flex items-center gap-2 text-blue-400 text-sm font-medium">
-            <Link href="/" className="hover:text-blue-300 transition-colors">Home</Link>
-            <span className="text-white/30">/</span>
-            <span className="text-white/80">{breadcrumb || title}</span>
-          </nav>
+          <ScrollReveal threshold={0}>
+            <nav className="flex items-center gap-2 text-blue-400 text-sm font-medium">
+              <Link href="/" className="hover:text-blue-300 transition-colors">Home</Link>
+              <span className="text-white/30">/</span>
+              <span className="text-white/80">{breadcrumb || title}</span>
+            </nav>
+          </ScrollReveal>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            {title}
-          </h1>
+          <ScrollReveal delay={0.1} threshold={0}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              {title}
+            </h1>
+          </ScrollReveal>
+          
           {subtitle && (
-            <p className="text-lg text-white/70 max-w-2xl leading-relaxed">
-              {subtitle}
-            </p>
+            <ScrollReveal delay={0.2} threshold={0}>
+              <p className="text-lg text-white/70 max-w-2xl leading-relaxed">
+                {subtitle}
+              </p>
+            </ScrollReveal>
           )}
         </div>
       </div>

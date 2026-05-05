@@ -1,4 +1,5 @@
 import { Building2, FileSignature, Settings, Landmark } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function SetupSteps() {
   const steps = [
@@ -35,37 +36,40 @@ export default function SetupSteps() {
   return (
     <section className="py-24 bg-[#f8f9fa] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
-            How to Start a Business in UAE <span className="text-blue-600">4 Simple Steps</span>
-          </h2>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
+              How to Start a Business in UAE <span className="text-blue-600">4 Simple Steps</span>
+            </h2>
+          </div>
+        </ScrollReveal>
 
         {/* Desktop Container */}
         <div className="relative hidden lg:block pb-16">
           <div className="grid grid-cols-4 gap-6">
             {steps.map((step, i) => (
-              <div 
-                key={i} 
-                className={`relative w-full transition-all duration-300 hover:-translate-y-1 ${
-                  step.position === 'bottom' ? 'mt-24' : 'mb-24'
-                }`}
-              >
-                <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 h-full flex flex-col relative z-10">
-                  <div className="text-blue-600 mb-6">
-                    <step.icon size={36} strokeWidth={1.5} />
+              <ScrollReveal key={i} animation="scale-up" delay={i * 0.15}>
+                <div 
+                  className={`relative w-full transition-all duration-300 hover:-translate-y-1 ${
+                    step.position === 'bottom' ? 'mt-24' : 'mb-24'
+                  }`}
+                >
+                  <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 h-full flex flex-col relative z-10">
+                    <div className="text-blue-600 mb-6">
+                      <step.icon size={36} strokeWidth={1.5} />
+                    </div>
+                    <h3 className="text-lg font-extrabold text-slate-900 mb-4 leading-tight">{step.title}</h3>
+                    <p className="text-slate-500 leading-relaxed text-[13px]">{step.desc}</p>
                   </div>
-                  <h3 className="text-lg font-extrabold text-slate-900 mb-4 leading-tight">{step.title}</h3>
-                  <p className="text-slate-500 leading-relaxed text-[13px]">{step.desc}</p>
+                  
+                  {/* Step Number Circle */}
+                  <div className={`absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm shadow-md border-[4px] border-[#f8f9fa] z-20 ${
+                    step.position === 'top' ? '-bottom-5' : '-top-5'
+                  }`}>
+                    {step.number}
+                  </div>
                 </div>
-                
-                {/* Step Number Circle */}
-                <div className={`absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm shadow-md border-[4px] border-[#f8f9fa] z-20 ${
-                  step.position === 'top' ? '-bottom-5' : '-top-5'
-                }`}>
-                  {step.number}
-                </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
 
@@ -100,17 +104,19 @@ export default function SetupSteps() {
         {/* Mobile / Tablet Container */}
         <div className="lg:hidden space-y-12">
           {steps.map((step, i) => (
-            <div key={i} className="relative bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-              {/* Step Number Circle (Top Left on mobile) */}
-              <div className="absolute -top-5 left-8 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm shadow-md border-[4px] border-[#f8f9fa]">
-                {step.number}
+            <ScrollReveal key={i} animation="fade-up" delay={i * 0.1}>
+              <div className="relative bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                {/* Step Number Circle (Top Left on mobile) */}
+                <div className="absolute -top-5 left-8 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm shadow-md border-[4px] border-[#f8f9fa]">
+                  {step.number}
+                </div>
+                <div className="text-blue-600 mb-4 mt-2">
+                  <step.icon size={32} strokeWidth={1.5} />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-3 leading-tight">{step.title}</h3>
+                <p className="text-slate-500 leading-relaxed text-sm">{step.desc}</p>
               </div>
-              <div className="text-blue-600 mb-4 mt-2">
-                <step.icon size={32} strokeWidth={1.5} />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 leading-tight">{step.title}</h3>
-              <p className="text-slate-500 leading-relaxed text-sm">{step.desc}</p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
 

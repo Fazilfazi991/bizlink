@@ -70,8 +70,6 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-                </div>
-              </div>
             </ScrollReveal>
           </div>
         </div>
@@ -99,22 +97,6 @@ export default function AboutPage() {
                 <p className="text-slate-400 text-lg leading-relaxed">To become the UAE's most influential business gateway, recognized for setting the industry gold standard in professional document clearing and corporate advisory services.</p>
               </div>
             </ScrollReveal>
-          </div>
-        </div>
-      </section>
-              <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform">
-                <Target size={32} />
-              </div>
-              <h3 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h3>
-              <p className="text-slate-600 text-lg leading-relaxed">To strip away the complexities of UAE bureaucracy, providing every entrepreneur with a clear, fast, and transparent path to business success through expert consultation and local liaison.</p>
-            </div>
-            <div className="p-12 bg-slate-900 text-white rounded-[3rem] border border-slate-800 hover:shadow-xl transition-all group">
-              <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform">
-                <Eye size={32} />
-              </div>
-              <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
-              <p className="text-slate-400 text-lg leading-relaxed">To become the UAE's most influential business gateway, recognized for setting the industry gold standard in professional document clearing and corporate advisory services.</p>
-            </div>
           </div>
         </div>
       </section>
